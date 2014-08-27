@@ -1,0 +1,17 @@
+{
+    "name": "christopherauthier/wet-boew-dist",
+    "description": "Web Experience Toolkit assets for Laravel",
+    "keywords": ["laravel", "wxt", "web", "experience", "toolkit"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Authier",
+            "email": "authier.christopher@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "laravel/framework": "~4.2"
+    }
+}
+
