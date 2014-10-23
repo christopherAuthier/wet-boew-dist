@@ -1,21 +1,28 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8"/>
-
-<title>Creating a pull request
-- Documentation
-- Web Experience Toolkit
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Creating a pull request - Documentation - Web Experience Toolkit
 </title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-<meta name="description" content="How to create a pull request"/>
-
-<!--[if gte IE 9 | !IE ]><!--> <link href="../assets/favicon.ico" rel="icon" type="image/x-icon"/> <link rel="stylesheet" href="../css/wet-boew.min.css"/> <!--<![endif]-->
-<link rel="stylesheet" href="../css/theme.min.css"/>
-<!--[if lt IE 9]><link href="../assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="../css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="../js/ie8-wet-boew.min.js"></script><![endif]-->
-<noscript><link rel="stylesheet" href="../css/noscript.min.css"/></noscript>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="How to create a pull request">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../css/wet-boew.min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="../css/theme.min.css">
+<!--[if lt IE 9]>
+<link href="../assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
@@ -61,8 +68,8 @@
 <form action="https://google.ca/search" method="get" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q">Search website</label>
-<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
-<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/"/>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
 </div>
 <button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
 </form>
@@ -76,8 +83,8 @@
 <div class="row">
 <ul class="list-inline menu">
 <li><a href="../index-en.html">WET project</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html#implement">Implement WET</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html">Contribute to WET</a></li>
+<li><a href="../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../docs/start-en.html">Contribute to WET</a></li>
 </ul>
 </div>
 </div>
@@ -101,9 +108,9 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Creating a pull request</h1>
-<section class="alert alert-info">
+<section class="alert alert-warning">
 <h2 class="h3">Looking for WET v3.1?</h2>
-<p>WET v4.0 is now the current version. There is a new location for the <a href="http://wet-boew.github.io/v3.1-ci/docs/gs-cd/index-en.html">Getting started page in WET v3.1</a>.</p>
+<p>As of September 23, 2014, version 3.1 of the Web Experience Toolkit is no longer supported. The source code and documentation have been moved to the <a href="https://github.com/wet-boew/wet-boew-legacy">wet-boew-legacy</a> repository.</p>
 </section>
 <p>Pull requests are welcome. Please make sure your changes are to the latest code and limit the commit range to just the files you intended to change (to avoid conflicts).</p>
 <ul>
@@ -142,10 +149,9 @@
 <h2 id="test">Testing your PR before submitting</h2>
 <ul>
 <li>
-Validate your HTML markup as to ensure well-formed HTML5.
-<ul>
+Validate your HTML markup as to ensure well-formed HTML5.[{htmlmin-lb}]<ul>
 <li>These tests will be run as part of the default build, or by calling <code>grunt htmllint</code> to run the task on your built HTML.
-<li>You can manually test for well-formed markup using the <a rel="external" href="http://validator.w3.org/nu/">W3C HTML validator</a>. Validate with an XHTML5 preset and a checkmark next to "Be lax about HTTP Content-Type".</li>
+</li><li>You can manually test for well-formed markup using the <a rel="external" href="http://validator.w3.org/nu/">W3C HTML validator</a>. Validate with an XHTML5 preset and a checkmark next to "Be lax about HTTP Content-Type".</li>
 </ul>
 </li>
 <li>
@@ -160,20 +166,29 @@ Validate your HTML markup as to ensure well-formed HTML5.
 <li>Formatting recommendations:
 <ul>
 <li>Indenting can be enforced by installing an <a href="http://editorconfig.org">EditorConfig</a> plugin for your prefered <abbr>IDE</abbr>
-<li>Indent with tabs using the <a rel="external" href="http://en.wikipedia.org/wiki/Indent_style#K.26R_style">K&amp;R indenting style</a></li>
+</li><li>Indent with tabs using the <a rel="external" href="http://en.wikipedia.org/wiki/Indent_style#K.26R_style">K&amp;R indenting style</a></li>
 <li>Use single quotes for strings in JavaScript (so unescaped double quotes can be used for attributes in HTML output)</li>
 </ul>
 </li>
 <li>
-Test Web pages against the following browser test baseline:
-<ul>
+Test Web pages against the following browser test baseline:[{htmlmin-lb}]<ul>
 <li>The current and previous major version of each browser that accounts for at least 5 per cent of visits<sup id="fn1-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup> to the website;</li>
 <li>Any major version of a browser that, on its own, accounts for at least 5 per cent of visits<sup id="fn2-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup> to the website; and</li>
 <li>The current major version of each mobile browser that accounts for at least 5 per cent of mobile device visits<sup id="fn3-rf"><a class="fn-lnk" href="#fn1"><span class="wb-inv">Footnote </span>1</a></sup>.</li>
 </ul>
 </li>
-<li>PR testing is done by <a rel="external" href="https://travis-ci.org/wet-boew/wet-boew">Travis-CI</a>, but the same set of tests can be run using "ant test" locally before you submit</li>
+<li>PR testing is done by <a rel="external" href="https://travis-ci.org/wet-boew/wet-boew">Travis-CI</a>, but the same set of tests can be run using <code>grunt dist</code> locally before you submit</li>
 </ul>
+</section>
+<section>
+<h2>Commit Messages</h2>
+<p>When committing changes for a pull request, your commit message should start off with the name of the affected plugin(s) or topic, followed by a colon and a short description of what's changed. A longer description can also optionally be included. If the commit resolves a pre-existing issue on GitHub, include "Fixes #issue-id." as a part of the long description.</p>
+<dl>
+<dt>Message example</dt>
+<dd><code>Plugin name/topic: Short description of the change. <br>(Optional) Long description of the change. Fixes #1715.</code></dd>
+<dt>Command line example</dt>
+<dd><code>git commit -m "Plugin name/topic: Short description of the change." -m "(Optional) Long description of the change. Fixes #1715."</code></dd>
+</dl>
 </section>
 <aside class="wb-fnote" role="note">
 <h2 id="fn">Footnotes</h2>
@@ -225,7 +240,12 @@ Test Web pages against the following browser test baseline:
 </nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="../js/wet-boew.min.js"></script> <!--<![endif]-->
-<!--[if lt IE 9]><script src="../js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
 </body>
 </html>

@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" dir="ltr"> <!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8"/>
-
-<title>Gadget de partage
-- Exemples pratiques
-- Boîte à outils de l'expérience Web
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Gadget de partage - Exemples pratiques - Boîte à outils de l'expérience Web
 </title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-<meta name="description" content="Permet à l&#x27;utilisateur de partager un contenu Web sur les plateformes de médias sociaux."/>
-
-<!--[if gte IE 9 | !IE ]><!--> <link href="../../assets/favicon.ico" rel="icon" type="image/x-icon"/> <link rel="stylesheet" href="../../css/wet-boew.min.css"/> <!--<![endif]-->
-<link rel="stylesheet" href="../../css/theme.min.css"/>
-<link rel="stylesheet" href="demo/share.min.css"/>
-<!--[if lt IE 9]><link href="../../assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="../../css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="../../js/ie8-wet-boew.min.js"></script><![endif]-->
-<noscript><link rel="stylesheet" href="../../css/noscript.min.css"/></noscript>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Permet à l&#x27;utilisateur de partager un contenu Web sur les plateformes de médias sociaux.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../css/wet-boew.min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="../../css/theme.min.css">
+<link rel="stylesheet" href="demo/share.min.css">
+<!--[if lt IE 9]>
+<link href="../../assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../../css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
@@ -62,8 +69,8 @@
 <form action="https://google.ca/search" method="get" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q">Recherchez le site Web</label>
-<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
-<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/"/>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
 </div>
 <button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
 </form>
@@ -77,8 +84,8 @@
 <div class="row">
 <ul class="list-inline menu">
 <li><a href="../../index-fr.html">Projet de la BOEW</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-fr.html">Contribuer à la BOEW</a></li>
+<li><a href="../../docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
+<li><a href="../../docs/start-fr.html">Contribuer à la BOEW</a></li>
 </ul>
 </div>
 </div>
@@ -102,9 +109,9 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Gadget de partage</h1>
-<section class="alert alert-info">
+<section class="alert alert-warning">
 <h2 class="h3">Vous cherchez la BOEW v3.1?</h2>
-<p>La BOEW v4.0 est maintenant la version courrante. La <a href="http://wet-boew.github.io/v3.1-ci/demos/share/share-fr.html">version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
+<p>À partir du 23 septembre 2014, la version 3.1 de la Boîte à outils de l'expérience Web n'est plus supportée. Le code source et la documentation ont été déplacés vers le dépôt <a href="https://github.com/wet-boew/wet-boew-legacy">wet-boew-legacy</a>.</p>
 </section>
 <ul class="list-inline">
 <li><a class="btn btn-primary" href="../../docs/ref/share/share-fr.html">Documentation</a></li>
@@ -118,7 +125,7 @@
 <pre class="wb-prettify"><code>&lt;div class="wb-share" data-wb-share='{"pnlId": "pnl1"}'&gt;&lt;/div&gt;</code></pre>
 </details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Partager une vidéo</h2>
 <div class="wb-share" data-wb-share='{"type": "video", "title": "Titre de la vidéo", "url": "http://video.url", "pnlId": "pnl2"}'></div>
@@ -127,7 +134,7 @@
 <pre class="wb-prettify"><code>&lt;div class="wb-share" data-wb-share='{"type": "video", "title": "Titre de la vidéo", "url": "http://video.url", "pnlId": "pnl2"}'&gt;&lt;/div&gt;</code></pre>
 </details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Partager un fichier audio</h2>
 <div class="wb-share" data-wb-share='{"type": "audio", "title": "Titre du fichier audio", "url": "http://audio.url", "pnlId": "pnl8"}'></div>
@@ -136,7 +143,7 @@
 <pre class="wb-prettify"><code>&lt;div class="wb-share" data-wb-share='{"type": "audio", "title": "Titre du fichier audio", "url": "http://audio.url", "pnlId": "pnl8"}'&gt;&lt;/div&gt;</code></pre>
 </details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Partager un type personnalisé</h2>
 <div class="wb-share" data-wb-share='{"custType": " ce commentaire", "title": "Titre du commentaire", "url": "http://commentaire.url", "pnlId": "pnl3"}'></div>
@@ -145,7 +152,7 @@
 <pre class="wb-prettify"><code>&lt;div class="wb-share" data-wb-share='{"custType": " ce commentaire", "title": "Titre du commentaire", "url": "http://commentaire.url", "pnlId": "pnl3"}'&gt;&lt;/div&gt;</code></pre>
 </details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Ajouter des liens additionnels</h2>
 <div class="wb-share" data-wb-share='{"pnlId": "pnl4"}'></div>
@@ -162,7 +169,7 @@
 &lt;/div&gt;</code></pre>
 </details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Filtrer les sites affichés</h2>
 <div class="wb-share" data-wb-share='{"filter": ["twitter", "facebook"], "pnlId": "pnl5"}'></div>
@@ -170,7 +177,7 @@
 <summary>Visualiser le code</summary>
 <pre class="wb-prettify"><code>&lt;div class="wb-share" data-wb-share='{"filter": ["twitter", "facebook"], "pnlId": "pnl5"}'&gt;&lt;/div&gt;</code></pre></details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Ajouter du CSS personnalisé au lien de partage</h2>
 <div class="wb-share" data-wb-share='{"pnlId": "pnl6", "lnkClass": "btn btn-default"}'></div>
@@ -179,7 +186,7 @@
 <pre class="wb-prettify"><code>&lt;div class="wb-share" data-wb-share='{"pnlId": "pnl6", "lnkClass": "btn btn-default"}'&gt;&lt;/div&gt;</code></pre>
 </details>
 </section>
-<hr/>
+<hr>
 <section>
 <h2>Ajouter un site au panneau de partage</h2>
 <div class="wb-share" data-wb-share='{"pnlId": "pnl7", "sites": {"demosite": {"name": "Site démo", "url": "http://www.demosite.com/?to=&amp;subject={t}&amp;body={u}%0A{d}"}}}'></div>
@@ -235,7 +242,12 @@
 </nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="../../js/wet-boew.min.js"></script> <!--<![endif]-->
-<!--[if lt IE 9]><script src="../../js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
 </body>
 </html>

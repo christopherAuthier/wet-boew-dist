@@ -1,21 +1,28 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" dir="ltr"> <!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8"/>
-
-<title>Graphiques - Scénarios d&#x27;essai spécifiques
-- Exemples pratiques
-- Boîte à outils de l'expérience Web
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Graphiques - Scénarios d&#x27;essai spécifiques - Exemples pratiques - Boîte à outils de l'expérience Web
 </title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-<meta name="description" content="Scénarios spécifiques à des fins d&#x27;essaie."/>
-
-<!--[if gte IE 9 | !IE ]><!--> <link href="../../assets/favicon.ico" rel="icon" type="image/x-icon"/> <link rel="stylesheet" href="../../css/wet-boew.min.css"/> <!--<![endif]-->
-<link rel="stylesheet" href="../../css/theme.min.css"/>
-<!--[if lt IE 9]><link href="../../assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="../../css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="../../js/ie8-wet-boew.min.js"></script><![endif]-->
-<noscript><link rel="stylesheet" href="../../css/noscript.min.css"/></noscript>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Scénarios spécifiques à des fins d&#x27;essaie.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../css/wet-boew.min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="../../css/theme.min.css">
+<!--[if lt IE 9]>
+<link href="../../assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../../css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
@@ -61,8 +68,8 @@
 <form action="https://google.ca/search" method="get" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q">Recherchez le site Web</label>
-<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
-<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/"/>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
 </div>
 <button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
 </form>
@@ -76,8 +83,8 @@
 <div class="row">
 <ul class="list-inline menu">
 <li><a href="../../index-fr.html">Projet de la BOEW</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-fr.html">Contribuer à la BOEW</a></li>
+<li><a href="../../docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
+<li><a href="../../docs/start-fr.html">Contribuer à la BOEW</a></li>
 </ul>
 </div>
 </div>
@@ -101,11 +108,9 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Graphiques - Scénarios d&#x27;essai spécifiques</h1>
-<section class="alert alert-info">
+<section class="alert alert-warning">
 <h2 class="h3">Vous cherchez la BOEW v3.1?</h2>
-<p>La BOEW v4.0 est maintenant la version courrante. La
-<a href="http://wet-boew.github.io/v3.1-ci/demos/charts/index-fr.html">
-version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
+<p>À partir du 23 septembre 2014, la version 3.1 de la Boîte à outils de l'expérience Web n'est plus supportée. Le code source et la documentation ont été déplacés vers le dépôt <a href="https://github.com/wet-boew/wet-boew-legacy">wet-boew-legacy</a>.</p>
 </section>
 <ul class="list-inline">
 <li><a class="btn btn-primary" href="../../docs/ref/charts/charts-fr.html">Documentation</a></li>
@@ -119,7 +124,7 @@ version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
 <li><a href="functionandnumbers-fr.html">Séparateur des milliers</a></li>
 <li><a href="functionandnumbers-fr.html#functionpreset">Fonctions personalisés dans vos préréglages</a></li>
 </ul>
-<hr/>
+<hr>
 <section>
 <h2>Diagrame circulaire à 100&#160;%</h2>
 <p>Le graphique suivant devrait être un cercle plein d'où la légende contient seulement une valeur. Le texte mis en <em>évidence</em> dans le titre du tableau devrait être copier dans le titre du graphique (<code>&lt;figcaption&gt;</code>) et aussi dans le lien contenu dans l'élément (<code>&lt;summary&gt;</code>) afin de consulter le tableau.</p>
@@ -215,7 +220,7 @@ version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
 </tr>
 </tbody>
 </table>
-<hr/>
+<hr>
 <p><code>&lt;table class=&quot;wb-charts table&quot; data-wb-charts='{&quot;labelposition&quot;: 1, &quot;noencapsulation&quot;: true, &quot;reversettblparsing&quot;: true}'&gt;</code></p>
 <table class="wb-charts table" data-wb-charts='{"labelposition": 1, "noencapsulation": true, "reversettblparsing": true}'>
 <caption>Nombre de page par objectif principal et par audience</caption>
@@ -290,13 +295,13 @@ version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
 <p><code>&lt;table class=&quot;wb-charts wb-charts-pie table&quot; data-wb-charts='{ &quot;height&quot;: 500, &quot;decimal&quot;: 1 }'&gt;</code></p>
 <table class="wb-charts wb-charts-pie table" data-wb-charts='{ "height": 500, "decimal": 1 }'>
 <caption>Nombre de page ayant une tâche comme objectif principal et par audience</caption>
-<colgroup><col/></colgroup>
+<colgroup><col></colgroup>
 <colgroup>
-<col/>
-<col/>
-<col/>
-<col/>
-<col/>
+<col>
+<col>
+<col>
+<col>
+<col>
 </colgroup>
 <thead>
 <tr>
@@ -319,13 +324,13 @@ version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
 </tr>
 </tbody>
 </table>
-<hr/>
+<hr>
 <p>Veuillez prendre note que l'éléments <code>&lt;colgroup&gt;</code> est requis afain de créer le graphique subséquant.</p>
 <p><code>&lt;table class=&quot;wb-charts wb-charts-pie table&quot; data-wb-charts='{ &quot;height&quot;: 500, &quot;decimal&quot;: 1, &quot;reversettblparsing&quot;: true }'&gt;</code></p>
 <table class="wb-charts wb-charts-pie table" data-wb-charts='{ "height": 500, "decimal": 1, "reversettblparsing": true }'>
 <caption>Nombre de page ayant une tâche comme objectif principal et par audience</caption>
-<colgroup><col/></colgroup>
-<colgroup><col/></colgroup>
+<colgroup><col></colgroup>
+<colgroup><col></colgroup>
 <tr>
 <td></td>
 <th>Tâches</th>
@@ -397,7 +402,12 @@ version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
 </nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="../../js/wet-boew.min.js"></script> <!--<![endif]-->
-<!--[if lt IE 9]><script src="../../js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
 </body>
 </html>

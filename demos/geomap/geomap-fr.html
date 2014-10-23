@@ -1,21 +1,28 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" dir="ltr"> <!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8"/>
-
-<title>Géocarte
-- Exemples pratiques
-- Boîte à outils de l'expérience Web
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Géocarte - Exemples pratiques - Boîte à outils de l'expérience Web
 </title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-<meta name="description" content="Affiche une carte dynamique sur laquelle des informations de sources supplémentaires peuvent être superposées."/>
-
-<!--[if gte IE 9 | !IE ]><!--> <link href="../../assets/favicon.ico" rel="icon" type="image/x-icon"/> <link rel="stylesheet" href="../../css/wet-boew.min.css"/> <!--<![endif]-->
-<link rel="stylesheet" href="../../css/theme.min.css"/>
-<!--[if lt IE 9]><link href="../../assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="../../css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="../../js/ie8-wet-boew.min.js"></script><![endif]-->
-<noscript><link rel="stylesheet" href="../../css/noscript.min.css"/></noscript>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Affiche une carte dynamique sur laquelle des informations de sources supplémentaires peuvent être superposées.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../css/wet-boew.min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="../../css/theme.min.css">
+<!--[if lt IE 9]>
+<link href="../../assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../../css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
@@ -61,8 +68,8 @@
 <form action="https://google.ca/search" method="get" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q">Recherchez le site Web</label>
-<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
-<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/"/>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
 </div>
 <button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
 </form>
@@ -76,8 +83,8 @@
 <div class="row">
 <ul class="list-inline menu">
 <li><a href="../../index-fr.html">Projet de la BOEW</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-fr.html">Contribuer à la BOEW</a></li>
+<li><a href="../../docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
+<li><a href="../../docs/start-fr.html">Contribuer à la BOEW</a></li>
 </ul>
 </div>
 </div>
@@ -101,9 +108,9 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Géocarte</h1>
-<section class="alert alert-info">
+<section class="alert alert-warning">
 <h2 class="h3">Vous cherchez la BOEW v3.1?</h2>
-<p>La BOEW v4.0 est maintenant la version courrante. La <a href="http://wet-boew.github.io/v3.1-ci/demos/geomap/geomap-fr.html">version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
+<p>À partir du 23 septembre 2014, la version 3.1 de la Boîte à outils de l'expérience Web n'est plus supportée. Le code source et la documentation ont été déplacés vers le dépôt <a href="https://github.com/wet-boew/wet-boew-legacy">wet-boew-legacy</a>.</p>
 </section>
 <ul class="list-inline">
 <li><a class="btn btn-primary" href="../../docs/ref/geomap/geomap-fr.html">Documentation</a></li>
@@ -116,84 +123,82 @@
 </section>
 <section>
 <h2>Carte dynamique - Exemple</h2>
-
-<div id="sample_map"
-class="wb-geomap position scaleline tab geocoder aoi geolocation"
-data-wb-geomap='{
-"layersFile": "demo/config-fr.min.js",
-"tables": [{
-"id": "bbox",
-"tab": false,
-"zoom": true,
-"popups": true,
-"visible": false
-},{
-"id": "cities",
-"zoom": true,
-"tab": false,
-"popups": true,
-"popupsInfo": {
-"id": "citiesPopup",
-"height": 200,
-"width": 300,
-"close": true,
-"content": "<div style=\"white-space:nowrap;\"><p><strong>Subdivision de recensement: </strong>_Subdivision de recensement<div><a href=\"#\" class=\"button\" role=\"button\" title=\"Zoom à la ville\" aria-label=\"Zoom à la ville\" onclick=\"wb.doc.zoomFeature()\">Zoom à la ville</a></div></div>"
-},
-"style": {
-"type": "rule",
-"rule": [
-{
-"field": "Population de 2011",
-"value": [1000000],
-"filter": "LESS_THAN",
-"init": {
-"strokeColor": "#0083f5",
-"fillColor": "#57a8f0",
-"pointRadius": "6",
-"fillOpacity": 0.80,
-"strokeWidth": 1.0
-}
-},
-{
-"field": "Population de 2011",
-"value": [1000000, 2000000],
-"filter": "BETWEEN",
-"init": {
-"strokeColor": "#F90",
-"fillColor": "#F90",
-"pointRadius": "8",
-"fillOpacity": 0.80,
-"strokeWidth": 1.0
-}
-},
-{
-"field": "Population de 2011",
-"value": [2000000],
-"filter": "GREATER_THAN",
-"init": {
-"strokeColor": "#F00",
-"fillColor": "#F00",
-"pointRadius": "10",
-"fillOpacity": 0.80,
-"strokeWidth": 1.0
-}
-}
-]}
-}]
-}'>
+<!-- GeomapStart -->
+<div id="sample_map" class="wb-geomap position scaleline tab geocoder aoi geolocation" data-wb-geomap='{
+			"layersFile": "demo/config-fr.min.js",
+			"tables": [{
+				"id": "bbox",
+				"tab": false,
+				"zoom": true,
+				"popups": true,
+				"visible": false
+			},{
+				"id": "cities",
+				"zoom": true,
+				"tab": false,
+				"popups": true,
+				"popupsInfo": {
+					"id": "citiesPopup",
+					"height": 200,
+					"width": 300,
+					"close": true,
+					"content": "<div style=\"white-space:nowrap;\"><p><strong>Subdivision de recensement: </strong>_Subdivision de recensement<div><a href=\"#\" class=\"button\" role=\"button\" title=\"Zoom à la ville\" aria-label=\"Zoom à la ville\" onclick=\"wb.doc.zoomFeature()\">Zoom à la ville</a></div></div>"
+				},
+				"style": {
+					"type": "rule",
+					"rule": [
+					{
+						"field": "Rang",
+						"value": [3],
+						"filter": "GREATER_THAN",
+						"init": {
+							"strokeColor": "#0083f5",
+							"fillColor": "#57a8f0",
+							"pointRadius": "6",
+							"fillOpacity": 0.80,
+							"strokeWidth": 1.0
+						}
+					},
+					{
+						"field": "Rang",
+						"value": [2, 3],
+						"filter": "BETWEEN",
+						"init": {
+							"strokeColor": "#F90",
+							"fillColor": "#F90",
+							"pointRadius": "8",
+							"fillOpacity": 0.80,
+							"strokeWidth": 1.0
+						}
+					},
+					{
+						"field": "Rang",
+						"value": [1],
+						"filter": "EQUAL_TO",
+						"init": {
+							"strokeColor": "#F00",
+							"fillColor": "#F00",
+							"pointRadius": "10",
+							"fillOpacity": 0.80,
+							"strokeWidth": 1.0
+						}
+					}
+				]}
+			}]
+		}'>
 <div class="row">
 <div class="col-md-9">
-
+<!-- Insert Map Start (mandatory) -->
 <div class="wb-geomap-map"></div>
-
+<!-- Insert Map End -->
 </div>
-
+<!-- Insert Legend Start (optional) -->
 <section class="wb-geomap-legend col-md-3">
 <h3>Légende</h3>
 </section>
-
+<!-- Insert Legend End -->
 </div>
-
+<!-- Insert Layer Data Start (mandatory) -->
 <div class="row">
 <section class="col-md-12">
 <h3>Exemple - Données extérieure &amp; provenant de fichiers</h3>
@@ -295,9 +300,9 @@ data-wb-geomap='{
 </section>
 </section>
 </div>
-
+<!-- Insert Layer Data End-->
 </div>
-
+<!-- GeomapEnd -->
 <section>
 <h3>Code</h3>
 <details class="mrgn-bttm-lg">
@@ -329,9 +334,9 @@ data-wb-geomap='{
 				&quot;type&quot;: &quot;rule&quot;,
 				&quot;rule&quot;: [
 				{
-					&quot;field&quot;: &quot;Population de 2011&quot;,
-					&quot;value&quot;: [1000000],
-					&quot;filter&quot;: &quot;LESS_THAN&quot;,
+					&quot;field&quot;: &quot;Rang&quot;,
+					&quot;value&quot;: [3],
+					&quot;filter&quot;: &quot;GREATER_THAN&quot;,
 					&quot;init&quot;: {
 						&quot;strokeColor&quot;: &quot;#0083f5&quot;,
 						&quot;fillColor&quot;: &quot;#57a8f0&quot;,
@@ -341,8 +346,8 @@ data-wb-geomap='{
 					}
 				},
 				{
-					&quot;field&quot;: &quot;Population de 2011&quot;,
-					&quot;value&quot;: [1000000, 2000000],
+					&quot;field&quot;: &quot;Rang&quot;,
+					&quot;value&quot;: [2, 3],
 					&quot;filter&quot;: &quot;BETWEEN&quot;,
 					&quot;init&quot;: {
 						&quot;strokeColor&quot;: &quot;#F90&quot;,
@@ -353,9 +358,9 @@ data-wb-geomap='{
 					}
 				},
 				{
-					&quot;field&quot;: &quot;Population de 2011&quot;,
-					&quot;value&quot;: [2000000],
-					&quot;filter&quot;: &quot;GREATER_THAN&quot;,
+					&quot;field&quot;: &quot;Rang&quot;,
+					&quot;value&quot;: [1],
+					&quot;filter&quot;: &quot;EQUAL_TO&quot;,
 					&quot;init&quot;: {
 						&quot;strokeColor&quot;: &quot;#F00&quot;,
 						&quot;fillColor&quot;: &quot;#F00&quot;,
@@ -495,30 +500,28 @@ data-wb-geomap='{
 <section>
 <h2>Carte statique - Exemple</h2>
 <p>Geomap peux être configuré pour créer une carte statique afin de situer un endroit comme un bureau ou une étendue à l'aide d'une "bbox".</p>
-
-<div id="location_map"
-class="wb-geomap static"
-data-wb-geomap='{
-"tables": [{
-"id": "addNRCan",
-"style": {
-"type": "symbol",
-"init": {
-"pointRadius": 12,
-"graphicName": "star",
-"strokeColor": "#FF0000",
-"fillColor": "#FF0000",
-"fillOpacity": 0.7
-}
-}
-}]
-}'>
+<!-- GeomapStart -->
+<div id="location_map" class="wb-geomap static" data-wb-geomap='{
+			"tables": [{
+				"id": "addNRCan",
+				"style": {
+					"type": "symbol",
+					"init": {
+						"pointRadius": 12,
+						"graphicName": "star",
+						"strokeColor": "#FF0000",
+						"fillColor": "#FF0000",
+						"fillOpacity": 0.7
+					}
+				}
+			}]
+		}'>
 <div class="row">
 <div class="col-md-12">
-
+<!-- Insert Map Start (mandatory) -->
 <div class="wb-geomap-map col-md-4"></div>
-
-
+<!-- Insert Map End -->
+<!-- Insert Layer Data Start (mandatory) -->
 <div class="wb-geomap-layers col-md-4">
 <table id="addNRCan" aria-label="Adresse des bureaux de RNCan Ottawa" class="table">
 <caption class="wb-inv">Adresse des bureaux de Ressources naturelles Canada Ottawa</caption>
@@ -529,16 +532,16 @@ data-wb-geomap='{
 </thead>
 <tbody>
 <tr data-geometry="POINT (-75.70535, 45.3995)" data-type="wkt">
-<td>615 rue Booth,<br/>Ottawa (ON),<br/>Canada,<br/>K1A 0E8</td>
+<td>615 rue Booth,<br>Ottawa (ON),<br>Canada,<br>K1A 0E8</td>
 </tr>
 </tbody>
 </table>
 </div>
-
+<!-- Insert Layer Data End -->
 </div>
 </div>
 </div>
-
+<!-- GeomapEnd -->
 <section>
 <h3>Code</h3>
 <details>
@@ -591,6 +594,78 @@ data-wb-geomap='{
 </details>
 </section>
 </section>
+<section>
+<h2>Carte WMS - Exemple WMS</h2>
+<p>Geomap peut être configuré pour utiliser une carte de base de type WMS. L'item basemap dans le fichier de configuration permet de définir le WMS à utiliser.</p>
+<!-- GeomapStart -->
+<div id="wms_map" class="wb-geomap" data-wb-geomap='{
+			"layersFile": "demo/configwms-en.min.js"
+		}'>
+<div class="row">
+<div class="col-md-12">
+<!-- Insert Map Start (mandatory) -->
+<div class="wb-geomap-map col-md-4"></div>
+<!-- Insert Map End -->
+<!-- Insert Layer Data Start (mandatory) -->
+<div class="wb-geomap-layers col-md-4">
+</div>
+<!-- Insert Layer Data End -->
+</div>
+</div>
+</div>
+<!-- GeomapEnd -->
+<section>
+<h3>Code</h3>
+<details class="mrgn-tp-lg">
+<summary>Visualiser le code</summary>
+<pre><code>&lt;!-- GeomapStart --&gt;
+&lt;div id=&quot;location_map&quot;
+	class=&quot;wb-geomap&quot;
+	data-wb-geomap='{
+		&quot;layersFile&quot;: &quot;demo/configwms-fr.js&quot;
+	}'&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-md-12&quot;&gt;
+			&lt;!-- Insert Map Start (mandatory) --&gt;
+			&lt;div class=&quot;wb-geomap-map col-md-4&quot;&gt;&lt;/div&gt;
+			&lt;!-- Insert Map End --&gt;
+
+			&lt;!-- Insert Layer Data Start (mandatory) --&gt;
+			&lt;div class=&quot;wb-geomap-layers col-md-4&quot;&gt;&lt;/div&gt;
+			&lt;!-- Insert Layer Data End --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- GeomapEnd --&gt;</code></pre>
+</details>
+<details class="mrgn-tp-lg">
+<summary>Visualiser le fichier de configuration</summary>
+<pre><code>
+			var wet_boew_geomap = {
+				// OPTIONNEL: Géomap va fournir une carte de base par défaut si aucune carte de base n"est spécifié ici.
+				basemap : {
+					title: &quot;WMS-Toporama&quot;,
+					type: &quot;wms&quot;,
+					url: &quot;http://wms.ess-ws.nrcan.gc.ca/wms/toporama_en&quot;,
+					version: &quot;1.1.1&quot;,
+					format: &quot;image/jpeg&quot;,
+					layers: &quot;WMS-Toporama&quot;,
+					mapOptions: {
+						maxExtent: &quot;-141, 41, -52, 84&quot;,
+						restrictedExtent: &quot;-141, 41, -52, 84&quot;,
+						maxResolution: &quot;auto&quot;,
+						projection: &quot;EPSG:4269&quot;,
+						units: &quot;m&quot;,
+						displayProjection: &quot;EPSG:4269&quot;,
+						aspectRatio: 0.8
+					}
+				},
+				overlays: []
+			};
+		</code></pre>
+</details>
+</section>
+</section>
 <dl id="wb-dtmd">
 <dt>Date de modification&#160;:&#32;</dt>
 <dd><time property="dateModified">2014-07-22</time></dd>
@@ -629,8 +704,13 @@ data-wb-geomap='{
 </nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="../../js/wet-boew.min.js"></script> <!--<![endif]-->
-<!--[if lt IE 9]><script src="../../js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
 <script src="demo/client_functions.min.js"></script>
 </body>
 </html>

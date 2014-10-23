@@ -1,22 +1,28 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8"/>
-
-<title>Geomap
-- Plugins
-- Documentation
-- Web Experience Toolkit
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Geomap - Plugins - Documentation - Web Experience Toolkit
 </title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-<meta name="description" content="Displays a dynamic map over which information from additional sources can be overlaid."/>
-
-<!--[if gte IE 9 | !IE ]><!--> <link href="../../../assets/favicon.ico" rel="icon" type="image/x-icon"/> <link rel="stylesheet" href="../../../css/wet-boew.min.css"/> <!--<![endif]-->
-<link rel="stylesheet" href="../../../css/theme.min.css"/>
-<!--[if lt IE 9]><link href="../../../assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="../../../css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="../../../js/ie8-wet-boew.min.js"></script><![endif]-->
-<noscript><link rel="stylesheet" href="../../../css/noscript.min.css"/></noscript>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Displays a dynamic map over which information from additional sources can be overlaid.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../../assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../../css/wet-boew.min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="../../../css/theme.min.css">
+<!--[if lt IE 9]>
+<link href="../../../assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../../../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../../../css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
@@ -62,8 +68,8 @@
 <form action="https://google.ca/search" method="get" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q">Search website</label>
-<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
-<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/"/>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
 </div>
 <button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
 </form>
@@ -77,8 +83,8 @@
 <div class="row">
 <ul class="list-inline menu">
 <li><a href="../../../index-en.html">WET project</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html#implement">Implement WET</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html">Contribute to WET</a></li>
+<li><a href="../../../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../../../docs/start-en.html">Contribute to WET</a></li>
 </ul>
 </div>
 </div>
@@ -105,9 +111,9 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Geomap</h1>
-<section class="alert alert-info">
+<section class="alert alert-warning">
 <h2 class="h3">Looking for WET v3.1?</h2>
-<p>WET v4.0 is now the current version. There is a new location for the <a href="http://wet-boew.github.io/v3.1-ci/docs/ref/geomap/geomap-en.html">current page in WET v3.1</a>.</p>
+<p>As of September 23, 2014, version 3.1 of the Web Experience Toolkit is no longer supported. The source code and documentation have been moved to the <a href="https://github.com/wet-boew/wet-boew-legacy">wet-boew-legacy</a> repository.</p>
 </section>
 <p>
 <a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Geomap:%20">Questions or comments?</a>
@@ -136,7 +142,7 @@
 <h2>How to implement</h2>
 <ol>
 <li>Add a <code>div</code> element with <code>class="wb-geomap"</code> and assign it a unique <code>id</code>.
-<li>Add <code>div</code> with <code>class="wb-geomap-map"</code> to the <code>div</code> created in step 1 where you want the map to be rendered.</li>
+</li><li>Add <code>div</code> with <code>class="wb-geomap-map"</code> to the <code>div</code> created in step 1 where you want the map to be rendered.</li>
 <li>Add <code>div</code> with <code>class="wb-geomap-layers"</code> to the <code>div</code> created in step 1 where you want the layer(s) listing to be rendered.</li>
 </ol>
 <h3>Optional elements</h3>
@@ -163,7 +169,33 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-
+<!--
+	<section>
+		<h3>File based (e.g. "config-en.min.js") configuration example</h3>
+		<pre><code>var wet_boew_geomap = {
+    basemap : {
+        title: 'CBMT',
+        type: 'wms',
+	url: 'http://geogratis.gc.ca/maps/CBMT',
+	layers: 'CBMT',
+	format: 'image/png',
+	version: '1.1.1'
+    },
+    overlays : [
+        {
+            title: 'KML Demo EN',
+            caption: 'This is a sample KML file loaded locally by Geomap.',
+	    type: 'kml',
+	    url: 'data/sample.kml',
+	    visible: true
+        },
+        {
+            ...
+        }
+    ]
+};</code></pre>
+	</section>
+-->
 <section>
 <h3>Plugin configuration options</h3>
 <p>Geomap can be configured in three ways:</p>
@@ -408,7 +440,7 @@ Add the unique <code>id</code> created in step 1 to a <code>tables</code> array 
 <pre><code>&lt;tr data-geometry="POINT (-114.05879, 51.04668)" data-type="wkt"&gt; ... &lt;/tr&gt;</code></pre>
 <pre><code>&lt;tr data-geometry="LINESTRING (30 10, 10 30, 40 40)" data-type="wkt"&gt; ... &lt;/tr&gt;</code></pre>
 <pre><code>&lt;tr data-geometry="POLYGON ((30 10, 10 20, 20 40, 40 40, 30 10))" data-type="wkt"&gt; ... &lt;/tr&gt;</code></pre>
-<p>Other geometry types are supported. See [http://en.wikipedia.org/wiki/Well-known_text Well-Known-Text] for more examples.</p>
+<p>Other geometry types are supported. See <a href="http://en.wikipedia.org/wiki/Well-known_text">Well-known text</a> for more examples.</p>
 </section>
 <section>
 <h5>Bbox example</h5>
@@ -515,7 +547,7 @@ var wet_boew_geomap = {
 </tr>
 <tr>
 <td><code>popups</code>
-<td>No</td>
+</td><td>No</td>
 <td>Boolean</td>
 <td>''</td>
 <td>If true popups for features will be enabled. Note that the "<code>popupsInfo</code>" parameter allows for customization of the popup and its content.</td>
@@ -686,7 +718,7 @@ var wet_boew_geomap = {
 ...</code></pre>
 </section>
 </section>
-</section>
+</p></section>
 <section>
 <h3>Advanced Configuration</h3>
 <p>Geomap provides developers with a hook to access the OpenLayers Map object. This can be useful if you have specific functionality that Geomap does not support out of the box. Geomap fires an event when it has loaded called <code>geomap-ready</code> that you can attach a listener to and get an array of OpenLayers maps that exist in your page.</p>
@@ -759,7 +791,7 @@ wb.doc.on( "geomap.ready", function( event, maps ) {
 </section>
 <dl id="wb-dtmd">
 <dt>Date modified:&#32;</dt>
-<dd><time property="dateModified">2014-08-04</time></dd>
+<dd><time property="dateModified">2014-09-24</time></dd>
 </dl>
 </main>
 <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
@@ -795,7 +827,12 @@ wb.doc.on( "geomap.ready", function( event, maps ) {
 </nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="../../../js/wet-boew.min.js"></script> <!--<![endif]-->
-<!--[if lt IE 9]><script src="../../../js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../../../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
 </body>
 </html>

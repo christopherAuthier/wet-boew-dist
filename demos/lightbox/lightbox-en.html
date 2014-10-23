@@ -1,22 +1,29 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8"/>
-
-<title>Lightbox
-- Working examples
-- Web Experience Toolkit
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Lightbox - Working examples - Web Experience Toolkit
 </title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-<meta name="description" content="Display images and other content in a dialog box, either individually or as part of a gallery."/>
-
-<!--[if gte IE 9 | !IE ]><!--> <link href="../../assets/favicon.ico" rel="icon" type="image/x-icon"/> <link rel="stylesheet" href="../../css/wet-boew.min.css"/> <!--<![endif]-->
-<link rel="stylesheet" href="../../css/theme.min.css"/>
-<link rel="stylesheet" href="demo/lightbox.min.css"/>
-<!--[if lt IE 9]><link href="../../assets/favicon.ico" rel="shortcut icon"/> <link rel="stylesheet" href="../../css/ie8-wet-boew.min.css"/> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="../../js/ie8-wet-boew.min.js"></script><![endif]-->
-<noscript><link rel="stylesheet" href="../../css/noscript.min.css"/></noscript>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Display images and other content in a dialog box, either individually or as part of a gallery.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../css/wet-boew.min.css">
+<!--<![endif]-->
+<link rel="stylesheet" href="../../css/theme.min.css">
+<link rel="stylesheet" href="demo/lightbox.min.css">
+<!--[if lt IE 9]>
+<link href="../../assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+<noscript><link rel="stylesheet" href="../../css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
@@ -62,8 +69,8 @@
 <form action="https://google.ca/search" method="get" role="search" class="form-inline">
 <div class="form-group">
 <label for="wb-srch-q">Search website</label>
-<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
-<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/"/>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
 </div>
 <button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
 </form>
@@ -77,8 +84,8 @@
 <div class="row">
 <ul class="list-inline menu">
 <li><a href="../../index-en.html">WET project</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html#implement">Implement WET</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html">Contribute to WET</a></li>
+<li><a href="../../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../../docs/start-en.html">Contribute to WET</a></li>
 </ul>
 </div>
 </div>
@@ -102,9 +109,9 @@
 </header>
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Lightbox</h1>
-<section class="alert alert-info">
+<section class="alert alert-warning">
 <h2 class="h3">Looking for WET v3.1?</h2>
-<p>WET v4.0 is now the current version. There is a new location for the <a href="http://wet-boew.github.io/v3.1-ci/demos/lightbox/lightbox-en.html">current page in WET v3.1</a>.</p>
+<p>As of September 23, 2014, version 3.1 of the Web Experience Toolkit is no longer supported. The source code and documentation have been moved to the <a href="https://github.com/wet-boew/wet-boew-legacy">wet-boew-legacy</a> repository.</p>
 </section>
 <ul class="list-inline">
 <li><a class="btn btn-primary" href="../../docs/ref/lightbox/lightbox-en.html">Documentation</a></li>
@@ -144,7 +151,7 @@
 <ul>
 <li>
 <a class="wb-lbx" href="demo/1_b.jpg" title="Image 1">
-<img src="demo/1_s.jpg" alt="Image 1"/>
+<img src="demo/1_s.jpg" alt="Image 1">
 </a>
 </li>
 <li>
@@ -195,7 +202,7 @@
 </ol>
 </li>
 </ol>
-<button class="btn btn-primary popup-modal-dismiss">Close modal popup</button>
+<button class="btn btn-primary popup-modal-dismiss" type="button">Close modal popup</button>
 </div>
 </section>
 </li>
@@ -232,7 +239,7 @@
 			&lt;/header&gt;
 			&lt;div class="modal-body"&gt;
 				...
-				&lt;button class="btn btn-primary popup-modal-dismiss"&gt;Close modal popup&lt;/button&gt;
+				&lt;button class="btn btn-primary popup-modal-dismiss" type="button"&gt;Close modal popup&lt;/button&gt;
 			&lt;/div&gt;
 		&lt;/section&gt;
 	&lt;/li&gt;
@@ -247,22 +254,22 @@
 <ul class="list-inline">
 <li>
 <a href="demo/1_b.jpg" title="Image 1">
-<img src="demo/1_s.jpg" alt="Image 1"/>
+<img src="demo/1_s.jpg" alt="Image 1">
 </a>
 </li>
 <li>
 <a href="demo/2_b.jpg" title="Image 2">
-<img src="demo/2_s.jpg" alt="Image 2" aria-describedby="image2-desc" longdesc="#image2-desc"/>
+<img src="demo/2_s.jpg" alt="Image 2" aria-describedby="image2-desc" longdesc="#image2-desc">
 </a>
 </li>
 <li>
 <a href="demo/3_b.jpg" title="Image 3">
-<img src="demo/3_s.jpg" alt="Image 3"/>
+<img src="demo/3_s.jpg" alt="Image 3">
 </a>
 </li>
 <li>
 <a href="demo/4_b.jpg" title="Image 4">
-<img src="demo/4_s.jpg" alt="Image 4"/>
+<img src="demo/4_s.jpg" alt="Image 4">
 </a>
 </li>
 </ul>
@@ -340,22 +347,22 @@
 <ul class="list-inline">
 <li>
 <a href="demo/1_b.jpg" title="Image 1">
-<img src="demo/1_s.jpg" alt="Image 1"/>
+<img src="demo/1_s.jpg" alt="Image 1">
 </a>
 </li>
 <li>
 <a href="demo/2_b.jpg" title="Image 2">
-<img src="demo/2_s.jpg" alt="Image 2" aria-describedby="image2-desc" longdesc="#image2-desc"/>
+<img src="demo/2_s.jpg" alt="Image 2" aria-describedby="image2-desc" longdesc="#image2-desc">
 </a>
 </li>
 <li>
 <a href="demo/3_b.jpg" title="Image 3">
-<img src="demo/3_s.jpg" alt="Image 3"/>
+<img src="demo/3_s.jpg" alt="Image 3">
 </a>
 </li>
 <li>
 <a href="demo/4_b.jpg" title="Image 4">
-<img src="demo/4_s.jpg" alt="Image 4"/>
+<img src="demo/4_s.jpg" alt="Image 4">
 </a>
 </li>
 </ul>
@@ -432,12 +439,12 @@
 <ul class="list-inline">
 <li>
 <a href="demo/1_b.jpg" title="Image 1" data-title="image_1_b">
-<img src="demo/1_s.jpg" alt="Image 1"/>
+<img src="demo/1_s.jpg" alt="Image 1">
 </a>
 </li>
 <li>
 <a href="demo/2_b.jpg" title="Image 2" data-title="image_2_b">
-<img src="demo/2_s.jpg" alt="Image 2" aria-describedby="image2-desc" longdesc="#image2-desc"/>
+<img src="demo/2_s.jpg" alt="Image 2" aria-describedby="image2-desc" longdesc="#image2-desc">
 </a>
 </li>
 </ul>
@@ -490,7 +497,7 @@
 <option value="4">Modal popup</option>
 <option value="5">Image gallery</option>
 </select>
-<button id="lbx-open-btn">Open lightbox</button>
+<button id="lbx-open-btn" type="button">Open lightbox</button>
 <section>
 <h4>Code</h4>
 <details>
@@ -505,7 +512,7 @@
 	&lt;option value=&quot;4&quot;&gt;Modal popup&lt;/option&gt;
 	&lt;option value=&quot;5&quot;&gt;Image gallery&lt;/option&gt;
 &lt;/select&gt;
-&lt;button id=&quot;lbx-open-btn&quot;&gt;Open lightbox&lt;/button&gt;</code></pre>
+&lt;button id=&quot;lbx-open-btn&quot; type=&quot;button&quot;&gt;Open lightbox&lt;/button&gt;</code></pre>
 </section>
 <section>
 <h5>JavaScript</h5>
@@ -627,8 +634,13 @@ $document.on( &quot;click vclick&quot;, &quot;#lbx-open-btn&quot;, function( eve
 </nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!--> <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <script src="../../js/wet-boew.min.js"></script> <!--<![endif]-->
-<!--[if lt IE 9]><script src="../../js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
 <script src="demo/lightbox.min.js"></script>
 </body>
 </html>
